@@ -14,7 +14,7 @@ const myNums = [1,2,3,4,5,6,7,8,9,10];
 
 //const myNewNums = myNums.filter((num) => num>4); //value ko return karane ke liye use karte h filter keyword with condition ke saath
 /* const myNewNums = myNums.filter((num)=> {
-    return num>4; // another way of writing the just above line
+    return num>4; // another way of writing the just above line // filter me hamesha whi value return hoti h jo true ho means constion satisfied kare
 }) */
 /* 
     const newNums = [];
