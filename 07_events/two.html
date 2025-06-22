@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rohit Gupta JavaScript</h1>
+    <button id="stop"> Stop </button>
+</body>
+<script>
+    /*setTimeout(function(){
+        console.log("Rohit")
+    },5000)*/
+
+    const sayRohit = function(){
+        console.log("Rohit");
+    }
+    setTimeout(sayRohit,3000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="JavaScript best Course"
+    }
+
+    const changeMe = setTimeout(changeText,5000) //Now it wil the h1 conetent in 5 second.
+
+    //ab agaar hame setTime out function ko rokna ha to
+    //isko hm rokenege jo stop button lagaya uske through waise to hm function se bhi rok skte h
+    //but event se rokna alag experience hoga.
+
+    document.querySelector('#stop').
+    addEventListener('click', function(){
+        clearTimeout(changeMe); //jb hm stop wale button pe 3 second ke andar click kar denge to ye settimeout function stop ho jayega
+    })
+</script>
+</html>
