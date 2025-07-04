@@ -1,0 +1,12 @@
+JavaSript is Synchronous by default.
+JavaScript is a single threaded language
+
+
+Blocking Code and Non Blocking Code
+
+=>Block the flow of program
+=>Read File Sync
+
+Non-Blocking Code
+=>Does not block execution
+=> Read file Async
